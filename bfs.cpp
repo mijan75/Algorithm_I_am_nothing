@@ -59,7 +59,7 @@ int main(){
         cin >> from >> where;
 
         graph[from].push_back(where);
-        //graph[where].push_back(from);
+        
     }
 
     int source, destination;
