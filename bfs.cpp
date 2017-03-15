@@ -59,7 +59,8 @@ int main(){
         cin >> from >> where;
 
         graph[from].push_back(where);
-        
+	//This line for biderectional
+        graph[where].push_back(from);
     }
 
     int source, destination;
