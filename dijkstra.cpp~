@@ -33,7 +33,6 @@ int dijkstra(int source, int destination){
         Pq.pop();
         int u = node.u;
         int w = node.w;
-        visit[u] = true;
 
         if(u == destination) return w;
 
@@ -43,6 +42,7 @@ int dijkstra(int source, int destination){
             if(visit[v] == false){
                 node.u = v;
                 node.w = w + cost[u][i];
+                visit[v] = true;
                 Pq.push(node);
             }
         }
